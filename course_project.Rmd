@@ -82,6 +82,7 @@ plot(varImp, main="Fig.2 Variable importance in decreasing order")
 modFit
 ```
 
+## Accuracy and out of sample error
 Now we estimate the model on the validation data set.
 ```{r, data_validation}
 pred <- predict(modFit, valid)
@@ -101,11 +102,11 @@ predFin <- predict(modFit, testOrig)
 predFin
 ```
 
+# Conclusion
+Random Forest algorythm with tuning control works well for Weight Lifting exercises analysis.
 
 # Appendix
-
 Here we plot some additional figures.
 ```{r,appendix}
 plot(modFit, main="Fig.3 Number of selected predictors vs Accuracy")
-
 ```
